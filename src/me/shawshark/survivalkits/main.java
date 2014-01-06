@@ -53,7 +53,8 @@ public class main extends JavaPlugin {
 			} else {
 				if(!usedkit.contains(p)) {
 					
-					if(args[0].equalsIgnoreCase("donor"))  {
+					if(args[0].equalsIgnoreCase("donor") || (p.hasPermission("craftshark.test")))  { /* remove permissions, it's only for testing 
+																											to see if the kits work. */
 						
 						if(user.inGroup("donor")) {
 							
@@ -79,7 +80,8 @@ public class main extends JavaPlugin {
 					
 					if(args[0].equalsIgnoreCase("supporter"))  {
 						
-						if(user.inGroup("supporter")) {
+						if(user.inGroup("supporter") || (p.hasPermission("craftshark.test"))) { /* remove permissions, it's only for testing 
+																										to see if the kits work. */
 						
 							p.sendMessage(hereisyourdonatorkit);
 							usedkit.add(p);
