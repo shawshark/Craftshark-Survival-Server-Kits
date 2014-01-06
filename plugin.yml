@@ -1,0 +1,7 @@
+name: Craftshark Survival Server Kits
+main: me.shawshark.survivalkits.main
+version: 1.0
+
+commands:
+  kit:
+  kits:
